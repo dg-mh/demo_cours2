@@ -1,0 +1,48 @@
+<h1>git restore</h1>
+<p>
+    Restaure les fichiers d'un arbre de travail
+</p>
+<h2>git restore --staged &ltfichier&gt</h2>
+<div>
+    <p>
+        Retire un fichier de l'espace de staging de git
+    </p>
+</div>
+<h2>git restore &ltfichier&gt</h2>
+<div>
+    <p>
+        Annule les modifications dans un fichier non stagé
+    </p>
+</div>
+<hr />
+<h1>git reset</h1>
+<p>
+    Réinitialise votre espace de travail à un état spécifique
+</p>
+<h2>git reset &ltfichier&gt</h2>
+<div>
+    <p>
+        Retire un fichier de l'espace de staging de git
+    </p>
+</div>
+<h2>git reset [--soft | --mixed | --hard] &ltcommit&gt</h2>
+<div>
+    <p>
+        Réinitialise votre branche courante sur le commit spécifié.
+        Le mode choisis déterminera ce qu'il advient des modifications sur vos fichiers.
+        Si aucun mode n'est choisi ce sera la mode mixed qui sera utilisé
+    </p>
+    <p>Mode:</p>
+    <ul>
+        <li>--soft: ne touche pas a vos fichiers, ce qui était stagé le reste</li>
+        <li>--mixed: ne touche pas à vos fichier mais réinitialise l'index; l'espace de staging sera donc vidé</li>
+        <li>--hard: Réinitialise vos fichier à l'état du commit cible. Les modifications sur vos fichiers seront donc
+            perdus</li>
+    </ul>
+    <p>Ici, on peut indiquer les commits cible de différentes façons:</p>
+    <ul>
+        <li>Nom de branche</li>
+        <li>Nom de tag</li>
+        <li>Checksum d'un commit (SHA)</li>
+    </ul>
+</div>
